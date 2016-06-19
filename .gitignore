@@ -1,2 +1,8 @@
 Library/*
 Temp/*
+windows/*
+android/*
+*.csproj
+*.sln
+*.vtcache
+*.suo
