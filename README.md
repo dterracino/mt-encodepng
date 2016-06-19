@@ -6,9 +6,14 @@ when the encoder has finished.
 
 For example:
 
-EncodeManager.Instance.EncodeImage(texture, 9, OnEncodingComplete);
+    EncodeManager.Instance.EncodeImage(texture, 9, OnEncodingComplete);
 
-The callback receives a byte array representing the PNG encoded image.
+The callback receives a byte array representing the PNG encoded image:
+
+    void OnEncodingComplete(byte[] pngData)
+    {
+        // Write pngData to disk
+    }
 
 The PNG encoder was taken from:
 
